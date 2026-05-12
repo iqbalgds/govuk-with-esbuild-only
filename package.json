@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Using govuk-frontend and esbuild only",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "y",
+  "scripts": {
+    "build": "esbuild src/client/main.js --bundle --outfile=public/bundle.js",
+    "watch": "esbuild src/client/main.js --bundle --outfile=public/bundle.js --watch",
+    "start": "node src/server.js",
+    "dev": "npm run build && npm run start"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.0",
+    "sass": "^1.99.0"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "govuk-frontend": "^6.1.0",
+    "nunjucks": "^3.2.4"
+  }
+}
