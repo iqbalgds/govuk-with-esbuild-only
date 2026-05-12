@@ -18,6 +18,7 @@ yarn-error.log*
 dist/
 build/
 out/
+public/
 
 # IDE/Editor folders
 .vscode/
