@@ -7,8 +7,8 @@
   "type": "commonjs",
   "main": "y",
   "scripts": {
-    "build": "esbuild src/client/main.js --bundle --outfile=public/bundle.js",
-    "watch": "esbuild src/client/main.js --bundle --outfile=public/bundle.js --watch",
+    "build": "node esbuild.config.mjs",
+    "watch": "node esbuild.config.mjs --watch",
     "start": "node src/server.js",
     "dev": "npm run build && npm run start"
   },
